@@ -14,8 +14,8 @@ docker rm msdobot_mongo_orderingList
 echo "run mongo-db for Cinema system"
 docker run --restart=always -d -p 9078:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_cinema mongo:3.6.15-xenial
 docker run --restart=always -d -p 9077:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
-docker run --restart=always -d -p 9076:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
-docker run --restart=always -d -p 9075:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
+docker run --restart=always -d -p 9076:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_notification mongo:3.6.15-xenial
+docker run --restart=always -d -p 9075:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_orderingList mongo:3.6.15-xenial
 
 docker run --restart=always -d -p 9089:9039 -e "TZ=Asia/Taipei" --name Zuul zuul:latest
 
