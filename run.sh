@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 
 echo "clear existed mongo-db of Cinema system"
 docker stop msdobot_mongo_cinema
