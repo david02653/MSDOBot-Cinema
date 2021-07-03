@@ -2,33 +2,33 @@
 
 ## Build
 cd Zuul
-./build.sh
+bash ./build.sh
 cd ..
 
 cd EurekaServer
-./build.sh
+bash ./build.sh
 cd 
 
 cd Payment
-./build.sh
+bash ./build.sh
 cd ..
 
 cd Notification
-./build.sh
+bash ./build.sh
 cd ..
 
 cd Ordering
-./build.sh
+bash ./build.sh
 cd ..
 
 cd CinemaCatalog
-./build.sh
+bash ./build.sh
 cd ..
 
 cd GroceryInventory
-./build.sh
+bash ./build.sh
 cd ..
 
 cd Cinema
-./build.sh
+bash ./build.sh
 cd ..
