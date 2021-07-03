@@ -1,5 +1,7 @@
 #!/bin/bash
 
+$JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
+
 ## Build
 cd Zuul
 bash ./build.sh
