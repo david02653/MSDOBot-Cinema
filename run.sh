@@ -1,21 +1,21 @@
 #!/bin/bash
 
 echo "clear existed mongo-db of Cinema system"
-docker stop mongo_cinema
-docker stop mongo_grocery
-docker stop mongo_notification
-docker stop mongo_orderingList
-docker rm mongo_cinema
-docker rm mongo_grocery
-docker rm mongo_notification
-docker rm mongo_orderingList
+docker stop msdobot_mongo_cinema
+docker stop msdobot_mongo_grocery
+docker stop msdobot_mongo_notification
+docker stop msdobot_mongo_orderingList
+docker rm msdobot_mongo_cinema
+docker rm msdobot_mongo_grocery
+docker rm msdobot_mongo_notification
+docker rm msdobot_mongo_orderingList
 
 # add up 50 in each port for testing
 echo "run mongo-db for Cinema system"
-docker run --restart=always -d -p 9078:27017 -e "TZ=Asia/Taipei" --name mongo_cinema mongo:3.6.15-xenial
-docker run --restart=always -d -p 9077:27017 -e "TZ=Asia/Taipei" --name mongo_grocery mongo:3.6.15-xenial
-docker run --restart=always -d -p 9076:27017 -e "TZ=Asia/Taipei" --name mongo_grocery mongo:3.6.15-xenial
-docker run --restart=always -d -p 9075:27017 -e "TZ=Asia/Taipei" --name mongo_grocery mongo:3.6.15-xenial
+docker run --restart=always -d -p 9078:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_cinema mongo:3.6.15-xenial
+docker run --restart=always -d -p 9077:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
+docker run --restart=always -d -p 9076:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
+docker run --restart=always -d -p 9075:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
 
 docker run --restart=always -d -p 9089:9039 -e "TZ=Asia/Taipei" --name Zuul zuul:latest
 
