@@ -4,33 +4,33 @@ JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 
 ## Build
 cd Zuul
-bash ./build.sh
+./build.sh
 cd ..
 
 cd EurekaServer
-bash ./build.sh
-cd .. 
+./build.sh
+cd ..
 
 cd Payment
-bash ./build.sh
+./build.sh
 cd ..
 
 cd Notification
-bash ./build.sh
+./build.sh
 cd ..
 
 cd Ordering
-bash ./build.sh
+./build.sh
 cd ..
 
 cd CinemaCatalog
-bash ./build.sh
+./build.sh
 cd ..
 
 cd GroceryInventory
-bash ./build.sh
+./build.sh
 cd ..
 
 cd Cinema
-bash ./build.sh
+./build.sh
 cd ..
