@@ -10,7 +10,7 @@ cd ..
 # Clear and run database
 docker stop msdobot_mongo_grocery
 docker rm msdobot_mongo_grocery
-docker run --restart=always -d -p 9077:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
+docker run --restart=always -d -p 9027:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
 
 # Run docker container
-docker run --restart=always -d -p 9063:9013 -e "TZ=Asia/Taipei" --name GroceryInventory groceryinventory:latest
+docker run --restart=always -d -p 9013:9013 -e "TZ=Asia/Taipei" --name GroceryInventory groceryinventory:latest

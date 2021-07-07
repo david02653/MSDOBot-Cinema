@@ -9,4 +9,4 @@ cd ..
 
 # Clear and run database
 # Run docker container
-docker run --restart=always -d -p 9090:9040 -e "TZ=Asia/Taipei" --name EurekaServer eurekaserver:latest
+docker run --restart=always -d -p 9040:9040 -e "TZ=Asia/Taipei" --name EurekaServer eurekaserver:latest
