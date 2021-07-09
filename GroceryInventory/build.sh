@@ -13,7 +13,7 @@ echo 'try to show content in target folder'
 cd target
 echo $(ls)
 cd ..
-cp ./target/groceryinventory-0.0.1-SNAPSHOT.jar .
+cp ./target/groceryinventory-1.jar .
 docker stop GroceryInventory || true
 docker rm GroceryInventory || true
 docker build -t groceryinventory:latest .
