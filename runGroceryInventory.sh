@@ -3,6 +3,7 @@
 JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/
 
 # Build
+echo 'try to build new image of GroceryInventory'
 cd GroceryInventory
 ./build.sh
 cd ..
