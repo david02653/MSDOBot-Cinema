@@ -9,6 +9,10 @@ echo 'show current pwd'
 echo $(pwd)
 echo 'try to show current content'
 echo $(ls)
+echo 'try to show content in target folder'
+cd target
+echo $(ls)
+cd ..
 cp ./target/groceryinventory-0.0.1-SNAPSHOT.jar .
 docker stop GroceryInventory || true
 docker rm GroceryInventory || true
