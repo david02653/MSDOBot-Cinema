@@ -8,10 +8,10 @@ cd GroceryInventory
 ./build.sh
 cd ..
 
-# Clear and run database
-docker stop msdobot_mongo_grocery
-docker rm msdobot_mongo_grocery
-docker run --restart=always -d -p 9027:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
+# # Clear and run database
+# docker stop msdobot_mongo_grocery
+# docker rm msdobot_mongo_grocery
+# docker run --restart=always -d -p 9027:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_grocery mongo:3.6.15-xenial
 
 # Run docker container
 docker run --restart=always -d -p 9013:9013 -e "TZ=Asia/Taipei" --name GroceryInventory groceryinventory:latest

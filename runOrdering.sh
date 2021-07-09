@@ -7,10 +7,10 @@ cd Ordering
 ./build.sh
 cd ..
 
-# Clear and run database
-docker stop msdobot_mongo_orderingList
-docker rm msdobot_mongo_orderingList
-docker run --restart=always -d -p 9025:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_orderingList mongo:3.6.15-xenial
+# # Clear and run database
+# docker stop msdobot_mongo_orderingList
+# docker rm msdobot_mongo_orderingList
+# docker run --restart=always -d -p 9025:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_orderingList mongo:3.6.15-xenial
 
 # Run docker container
 docker run --restart=always -d -p 9015:9015 -e "TZ=Asia/Taipei" --name Ordering ordering:latest
