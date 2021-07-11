@@ -21,7 +21,7 @@ public class Notification {
 			
             //通過連線認證獲取MongoDB連線
 //            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:9026");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -57,7 +57,7 @@ public class Notification {
 			
             //通過連線認證獲取MongoDB連線
 //            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:9026");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
 
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -91,7 +91,7 @@ public class Notification {
 			
             //通過連線認證獲取MongoDB連線
 //            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:9026");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
 
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -127,7 +127,7 @@ public class Notification {
 			
             //通過連線認證獲取MongoDB連線
 //            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:9026");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
 
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
