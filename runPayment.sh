@@ -8,4 +8,4 @@ cd Payment
 cd ..
 
 # Run docker container
-docker run --restart=always -d -p 9016:9016 -e "TZ=Asia/Taipei" --name Payment payment:latest
+docker run --restart=always -d -p 10007:9016 -e "TZ=Asia/Taipei" --name Payment payment:latest
