@@ -57,7 +57,9 @@ public class Notification {
 			
             //通過連線認證獲取MongoDB連線
 //            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
+            // add user account in
+            // MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
+            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.197.130:10009");
 
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -91,7 +93,8 @@ public class Notification {
 			
             //通過連線認證獲取MongoDB連線
 //            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
+            // add user accout in
+            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.197.130:10009");
 
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
@@ -127,7 +130,8 @@ public class Notification {
 			
             //通過連線認證獲取MongoDB連線
 //            MongoClient mongoClient = MongoClients.create("mongodb://140.121.196.23:4116");
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
+            // add user account in
+            MongoClient mongoClient = MongoClients.create("mongodb://cinema:cinema@140.121.197.130:10009");
 
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Notification");
