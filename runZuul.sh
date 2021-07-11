@@ -9,4 +9,4 @@ cd ..
 
 # Clear and run database
 # Run docker container
-docker run --restart=always -d -p 9039:9039 -e "TZ=Asia/Taipei" --name Zuul zuul:latest
+docker run --restart=always -d -p 10002:9039 -e "TZ=Asia/Taipei" --name Zuul zuul:latest
