@@ -1,6 +1,6 @@
 #!/bin/bash
 # this script will try to stop and remove all cinema related mongodb
-# note that this version will combin all 4 mongodb into 1
+# note that this version will only use one mongodb instead of use 4 mongodb
 
 # stop container and remove
 echo 'stop and remove all container with prefix name of "msdobot_mongo_"'
