@@ -36,7 +36,7 @@ public class CinemaTest {
 	@Test
 	public void test1_1_IndexTitle()
 	{
-		driver.get("http://140.121.197.130:9017/");
+		driver.get("http://140.121.197.130:10008/");
 		String title = driver.getTitle();
 		Assert.assertTrue(title.contains("Cinema - Home"));
 	}
@@ -47,7 +47,7 @@ public class CinemaTest {
 	{
 		//拿到變數 movieData 並確認電影資料
 		// Use the timeout when navigating to a webpage
-		driver.get("http://140.121.197.130:9017/");
+		driver.get("http://140.121.197.130:10008/");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 		try {
@@ -69,7 +69,7 @@ public class CinemaTest {
 	public void test1_3_OrderNewMovie() throws InterruptedException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://140.121.197.130:9017/");
+		driver.get("http://140.121.197.130:10008/");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 
@@ -108,7 +108,7 @@ public class CinemaTest {
 	@Test
 	public void test1_4_IndexGetNewNotification()
 	{
-		driver.get("http://140.121.197.130:9017/");
+		driver.get("http://140.121.197.130:10008/");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 		//確定新訊息數目>0
@@ -129,7 +129,7 @@ public class CinemaTest {
 	@Test
 	public void test1_5_IndexSetNotificationRead() throws InterruptedException
 	{
-		driver.get("http://140.121.197.130:9017/");
+		driver.get("http://140.121.197.130:10008/");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 		//點擊訊息按鈕
@@ -160,7 +160,7 @@ public class CinemaTest {
 	@Test
 	public void test2_1_ShopTitle()
 	{
-		driver.get("http://140.121.197.130:9017/shop.html");
+		driver.get("http://140.121.197.130:10008/shop.html");
 		String title = driver.getTitle();
 		Assert.assertTrue(title.contains("Cinema - Shop"));
 	}
@@ -171,7 +171,7 @@ public class CinemaTest {
 	{
 		//拿到變數 movieData 並確認電影資料
 		// Use the timeout when navigating to a webpage
-		driver.get("http://140.121.197.130:9017/shop.html");
+		driver.get("http://140.121.197.130:10008/shop.html");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 		try {
@@ -192,7 +192,7 @@ public class CinemaTest {
 	public void test2_3_OrderNewGrocery() throws InterruptedException
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://140.121.197.130:9017/shop.html");
+		driver.get("http://140.121.197.130:10008/shop.html");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 
@@ -224,7 +224,7 @@ public class CinemaTest {
 	@Test
 	public void test2_4_ShopGetNewNotification()
 	{
-		driver.get("http://140.121.197.130:9017/shop.html");
+		driver.get("http://140.121.197.130:10008/shop.html");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 		//確定新訊息數目>0
@@ -245,7 +245,7 @@ public class CinemaTest {
 	@Test
 	public void test2_5_ShopSetNotificationRead() throws InterruptedException
 	{
-		driver.get("http://140.121.197.130:9017/shop.html");
+		driver.get("http://140.121.197.130:10008/shop.html");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 		//點擊訊息按鈕
@@ -278,7 +278,7 @@ public class CinemaTest {
 	{
 		//拿到變數 orderedListData 並確認電影資料
 		// Use the timeout when navigating to a webpage
-		driver.get("http://140.121.197.130:9017/");
+		driver.get("http://140.121.197.130:10008/");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 		try {
@@ -300,7 +300,7 @@ public class CinemaTest {
 	{
 		//拿到變數 buyListData 並確認周邊資料
 		// Use the timeout when navigating to a webpage
-		driver.get("http://140.121.197.130:9017/shop.html");
+		driver.get("http://140.121.197.130:10008/shop.html");
 		//等個幾秒 讓頁面Ajax loading好
 		waitForPageLoaded();
 		try {
