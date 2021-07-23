@@ -22,7 +22,7 @@ public class GroceryInventory {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:9027");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Grocery");
@@ -58,7 +58,7 @@ public class GroceryInventory {
             //連線到MongoDB服務 如果是遠端連線可以替換“localhost”為伺服器所在IP地址
 			
             //通過連線認證獲取MongoDB連線
-            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:9027");
+            MongoClient mongoClient = MongoClients.create("mongodb://140.121.197.130:10009");
             
             //連線到資料庫(schema)
             MongoDatabase mongoDatabase = mongoClient.getDatabase("Grocery");
@@ -96,7 +96,7 @@ public class GroceryInventory {
 		String result = "";
 		//這邊利用Jsoup爬蟲 直接拿到Notification的資料
 		try {
-			URL url = new URL("http://140.121.197.130:9039/notification/getNotification?userID="+ID);
+			URL url = new URL("http://140.121.197.130:10002/notification/getNotification?userID="+ID);
 			org.jsoup.nodes.Document xmlDoc =  Jsoup.parse(url, 3000); //使用Jsoup jar 去解析網頁
 			result = xmlDoc.select("body").get(0).text();
 		} catch (MalformedURLException e) {
@@ -116,7 +116,7 @@ public class GroceryInventory {
 		String result = "";
 		//這邊利用Jsoup爬蟲 直接拿到資料
 		try {
-			URL url = new URL("http://140.121.197.130:9039/ordering/newGroceryOrdering?groceryID="+ID+"&quantity="+quantity);
+			URL url = new URL("http://140.121.197.130:10002/ordering/newGroceryOrdering?groceryID="+ID+"&quantity="+quantity);
 			org.jsoup.nodes.Document xmlDoc =  Jsoup.parse(url, 3000); //使用Jsoup jar 去解析網頁
 			result = xmlDoc.select("body").get(0).text();
 		} catch (MalformedURLException e) {
@@ -180,7 +180,7 @@ public class GroceryInventory {
 		String result = "";
 		//這邊利用Jsoup爬蟲 直接拿到已經購買的Grocery資料
 		try {
-			URL url = new URL("http://140.121.197.130:9039/notification/newNotification?userID="+userID+"&content="+content.getBytes("UTF8"));
+			URL url = new URL("http://140.121.197.130:10002/notification/newNotification?userID="+userID+"&content="+content.getBytes("UTF8"));
 			org.jsoup.nodes.Document xmlDoc =  Jsoup.parse(url, 3000); //使用Jsoup jar 去解析網頁
 			result = xmlDoc.select("body").get(0).text();
 			

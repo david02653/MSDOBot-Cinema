@@ -9,4 +9,4 @@ cd ..
 
 # Clear and run database
 # Run docker container
-docker run --restart=always -d -p 10005:9014 -e "TZ=Asia/Taipei" --name CinemaCatalog cinemacatalog:latest
+docker run --restart=always -d -p 10005:10005 -e "TZ=Asia/Taipei" --name CinemaCatalog cinemacatalog:latest

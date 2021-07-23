@@ -72,7 +72,7 @@
 				initOrderedList();
 				
 				$.ajax({
-		        url: "http://140.121.197.130:9014/getAllMovies",
+		        url: "http://140.121.197.130:10005/getAllMovies",
 				type:"GET",
 		        success: function (response) 
 		        {
@@ -186,7 +186,7 @@
 				
 				$.ajax({
 					type: "get",
-					url: "http://140.121.197.130:9014/orderingMovie",
+					url: "http://140.121.197.130:10005/orderingMovie",
 					
 					data:
 					{
@@ -207,7 +207,7 @@
 				//init the Notification List
 				$.ajax({
 					type: "get",
-					url: "http://140.121.197.130:9014/getNotification?userID=1",
+					url: "http://140.121.197.130:10005/getNotification?userID=1",
 					
 					data:
 					{
@@ -244,7 +244,7 @@
 				{
 					$.ajax({
 						type: "get",
-						url: "http://140.121.197.130:9012/setNotificationRead",
+						url: "http://140.121.197.130:10003/setNotificationRead",
 					
 						data:
 						{
@@ -263,7 +263,7 @@
 			function initOrderedList()
 			{
 				$.ajax({
-		        url: "http://140.121.197.130:9014/getMovieByID",
+		        url: "http://140.121.197.130:10005/getMovieByID",
 				data:
 				{
 					userID : 1

@@ -13,4 +13,4 @@ cd ..
 # docker run --restart=always -d -p 9028:27017 -e "TZ=Asia/Taipei" --name msdobot_mongo_cinema mongo:3.6.15-xenial
 
 # Run docker container
-docker run --restart=always -d -p 10008:9017 -e "TZ=Asia/Taipei" --name Cinema cinema:latest
+docker run --restart=always -d -p 10008:10008 -e "TZ=Asia/Taipei" --name Cinema cinema:latest
